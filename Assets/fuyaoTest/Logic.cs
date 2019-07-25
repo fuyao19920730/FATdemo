@@ -56,4 +56,9 @@ public class Logic : MonoBehaviour
 		long ret = Convert.ToInt64(ts.TotalSeconds);
 		return ret.ToString();
 	}
+
+    public void GetInfo()
+    {
+        DeviceInfo.GetDeviceInfo();
+    }
 }

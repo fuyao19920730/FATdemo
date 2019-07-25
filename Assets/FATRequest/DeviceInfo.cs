@@ -46,9 +46,7 @@ public class DeviceInfo  {
 
 	private static void DeviceInfoCallback(string obj)
 	{
-		throw new System.NotImplementedException();
-		//在这里解析json,赋值给静态变量
-		
-		
+        //在这里解析json,赋值给静态变量
+        Debug.Log("拿到了json" + obj);		
 	}
 }

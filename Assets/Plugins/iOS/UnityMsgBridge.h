@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-static const char * UNITY_DEVICE_CALLBACK = "deviceInfoCallback";
+static const char * UNITY_DEVICE_CALLBACK = "DeviceInfoCallback";
 static const char * UNITY_SENDMESSAGE_CALLBACK = "NativeMsgReceiver";
 
 @interface UnityMsgBridge : NSObject
 
-
++ (instancetype)shared;
+- (void)GetDeviceInfo;
 @end

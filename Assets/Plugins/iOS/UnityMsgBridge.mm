@@ -65,6 +65,7 @@ extern "C"{
                                  @"syslanguage":[DeviceInfo getDeviceLanguage],
                                  @"sysver":[DeviceInfo systemVersion],
                                  @"devicemodel":[DeviceInfo deviceModel],
+                                 @"timezone":[NSTimeZone localTimeZone].name
                                  };
     
     UnitySendMessage(UNITY_SENDMESSAGE_CALLBACK, UNITY_DEVICE_CALLBACK,  [[self getJsonStringFromDictionary:deviceInfo] UTF8String]);

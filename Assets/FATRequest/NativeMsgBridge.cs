@@ -47,13 +47,13 @@ public class NativeMsgBridge : MonoBehaviour {
 	{
 
 		this.deviceInfoCallback = deviceInfoCallback;
-#if  UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS && !UNITY_EDITOR
 		GetDeviceAllInfo();
 #elif UNITY_ANDROID && !UNITY_EDITOR
-
+        GetDeviceAllInfo();
 #else
 
 #endif
-	} 
-	
+    }
+
 }
